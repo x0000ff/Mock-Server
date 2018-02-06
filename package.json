@@ -1,0 +1,25 @@
+{
+  "name": "mock-server",
+  "version": "1.0.0",
+  "description": "Simple mock server",
+  "main": "app.js",
+  "scripts": {
+    "start": "app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "json",
+    "mock"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x0000ff/mock-server.git"
+  },
+  "author": "Konstantin Pornov ( x0000ff@gmail.com )",
+  "license": "ISC",
+  "homepage": "https://github.com/x0000ff/mock-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
