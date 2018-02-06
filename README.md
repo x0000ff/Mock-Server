@@ -1,5 +1,8 @@
 # Mock Server
 
+- ✅ `JSON` and `ping` example included 
+- ✅ Customizable 
+
 ## Requirements
 
 - Node.js >= v6.10.0
