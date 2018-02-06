@@ -30,3 +30,8 @@ $ npm start
   ```
   $ nodemon app.js
   ```
+
+# Example Mocks
+
+- **Get** `/ping`
+- **Get** `/users`
