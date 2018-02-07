@@ -35,3 +35,7 @@ $ npm start
 
 - **Get** `/ping`
 - **Get** `/users`
+
+| |
+|---|
+| ![](./documentation/Mock-Server-Demo.gif) |
