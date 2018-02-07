@@ -15,7 +15,6 @@ app.get('/', function(req, res) {
 })
 
 app.get('/ping', function(req, res) {
-
   res.statusCode = 201;
   res.contentType = 'application/json';
   res.send("pong " + Date.now());

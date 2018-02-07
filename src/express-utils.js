@@ -13,7 +13,7 @@ class ExpressUtils {
       res.send(json);
     });
   }
-  
+
 }
 
 var exports = module.exports = ExpressUtils;
