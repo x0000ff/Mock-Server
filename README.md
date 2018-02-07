@@ -15,19 +15,21 @@
 
 ## Run
 
-```
+```terminal
 $ npm start
 ```
 
 ## How to force server to re-lunch if files were modified?
 
 1. Install [Nodemon](https://github.com/remy/nodemon)
-  ```
+  
+  ```terminal
   $ npm install -g nodemon
   ```
 
 2. Run script
-  ```
+
+  ```terminal
   $ nodemon app.js
   ```
 
@@ -39,3 +41,34 @@ $ npm start
 | |
 |---|
 | ![](./documentation/Mock-Server-Demo.gif) |
+
+# How to add another mocked endpoint?
+
+## JSON response
+
+1. Create file with json-response and save in into `./mocks`:  
+
+    ```terminal
+    $ echo '{ "message": "Hello, World!" }' >> ./mocks/hello-world.json
+    ```
+
+2. Add new endpoint to `app.js`:
+    
+    ```js
+    app.get('/hello', function(req, res) {
+      ExpressUtils.jsonRouteToFile('./mocks/hello-world.json', req, res);
+    });
+    ```  
+    
+    Where `/hello` it's new endpoitn name.
+    And `./mocks/hello-world.json` is path to the file with new response.
+
+3. Run  
+
+    ```terminal
+    $ npm start
+    ```
+
+| |
+|---|
+| ![](./documentation/Mock-Server-Demo-new-endpoint.gif) |

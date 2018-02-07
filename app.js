@@ -25,6 +25,10 @@ app.get('/users', function(req, res) {
   ExpressUtils.jsonRouteToFile('./mocks/users.json', req, res);
 });
 
+app.get('/hello', function(req, res) {
+  ExpressUtils.jsonRouteToFile('./mocks/hello-world.json', req, res);
+});
+
 var server = app.listen(PORT, function() {
 
   var host = server.address().address
