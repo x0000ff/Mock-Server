@@ -22,6 +22,8 @@
 $ npm start
 ```
 
+And now just navigate to http://localhost:8081
+
 ## How to force server to re-lunch if files were modified?
 
 1. Install [Nodemon](https://github.com/remy/nodemon)
@@ -75,3 +77,7 @@ $ npm start
 | |
 |---|
 | ![](./documentation/Mock-Server-Demo-new-endpoint.gif) |
+
+## Other responses
+
+You can add any response using feature of [Express](http://expressjs.com/en/starter/hello-world.html)
